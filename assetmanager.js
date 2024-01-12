@@ -1,4 +1,5 @@
 class AssetManager {
+    /**jk/ */
     constructor() {
         this.successCount = 0;
         this.errorCount = 0;
