@@ -114,6 +114,8 @@ class GameEngine {
         this.draw();
     };
 
+    get["deltaTime"](){return this.clockTick;}
+
 };
 
 // KV Le was here :)

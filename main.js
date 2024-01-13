@@ -2,12 +2,13 @@ const gameEngine = new GameEngine();
 
 const ASSET_MANAGER = new AssetManager();
 
-ASSET_MANAGER.queueDownload("./Stormtrooper.png")
+ASSET_MANAGER.queueDownload("./storm.png");
 
 ASSET_MANAGER.downloadAll(() => {
 	const canvas = document.getElementById("gameWorld");
 	const ctx = canvas.getContext("2d");
-	gameEngine.addEntity(new Stormtrooper());
+	ctx.imageSmoothingEnabled = false;
+	gameEngine.addEntity(new Stormtrooper(gameEngine));
 	gameEngine.init(ctx);
 
 	gameEngine.start();
