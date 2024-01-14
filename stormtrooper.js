@@ -1,7 +1,7 @@
 class Stormtrooper{
 	constructor(game){
 		this.game = game;
-		this.animator = new Animator(ASSET_MANAGER.getAsset("./storm.png"), 0, 0, 47, 68, 16, 1);
+		this.animator = new Animator(ASSET_MANAGER.getAsset("./storm.png"), 0, 0, 47, 68, 16, 0.2);
 		this.x = 0;
 		this.y = 0;
 		this.speed = 50;
