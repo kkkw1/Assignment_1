@@ -2,6 +2,7 @@ const gameEngine = new GameEngine();
 
 const ASSET_MANAGER = new AssetManager();
 
+
 ASSET_MANAGER.queueDownload("./storm.png");
 
 ASSET_MANAGER.downloadAll(() => {
